@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tea Time Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">Tea Haven</a>
+            <ul class="navbar-links">
+			    <li><a href="homepage.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="form.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <main>
+        <section class="hero-section">
+            <h1>Welcome to Tea Haven</h1>
+            <p>Discover the finest selection of teas, handcrafted blends, and everything you need to enjoy a perfect cup of tea.</p>
+            <a href="products.html" class="btn-shop-now">Shop Now</a>
+        </section>
+
+        
+        <section class="tea-of-the-month-section">
+            <h2>Tea of the Month</h2>
+            <div class="tea-of-the-month-card">
+                <img src="lav chamo.png" alt="Tea of the Month">
+                <div class="tea-info">
+                    <h3>Lavender Chamomile Blend</h3>
+                    <p>This calming blend combines the soothing properties of chamomile with the fragrant notes of lavender, perfect for unwinding after a busy day.</p>
+                    <p><strong>Special Price: $14.99</strong></p>
+                    <a href="products.html" class="btn-buy-now">Buy Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+	<style>
+body {
+background-color:lightgreen;
+}
+p{
+font-family:Artifex;
+font-size: 20px;
+text-align: left;
+}	
+
+    <!-- JavaScript to load the navbar -->
+    <script>
+        // Load the navbar.html content into the 'navbar' div
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
